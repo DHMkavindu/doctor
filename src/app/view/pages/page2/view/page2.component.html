@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- <div class="row" style="left: 30%;position: relative">
+    <button class="button" style="vertical-align:middle"><span>Create Account </span></button>
+
+    <button class="button" style="vertical-align:middle"><span>Manage Account </span></button>
+
+    <button class="button" style="vertical-align:middle"><span>Doctor Schedule </span></button>
+
+    <button class="button" style="vertical-align:middle"><span>Make Appoinment </span></button>
+  </div> -->
+
+<div class="container" style="width: 80%">
+  <h2>Patient Handling</h2>
+  <form name="reg-form" class="reg-form" [formGroup] = "registerForm">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" name="userName">
+    </div>
+    <div class="form-group">
+      <label for="usr">Address:</label>
+      <input type="text" class="form-control" id="address" name="address">
+    </div>
+    <div class="form-group">
+      <label for="usr">Email:</label>
+      <input type="text" class="form-control" id="usr" name="mail">
+    </div>
+    <div class="form-group">
+      <label for="usr">Moblie Number:</label>
+      <input type="text" class="form-control" id="usr" name="mobile">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Add Details</button>
+  </form>
+
+  <hr>
+
+  <button class="button button2">Update Patient</button>
+  <button class="button button3">Remove Patient</button>
+  <hr>
+  
+
+</div>
+<div style="width: 80%;position: absolute;left: 20%;">
+<form name="reg-form" class="reg-form" [formGroup] = "registerForm">
+  <div>
+    <div class="form-group">
+      <label for="selectDoctor"><i class="fas fa-users"></i>  Select Patient</label>
+      <input list="Patient" class="form-control" id="cmbPatientName" name="cmbPatientName" placeholder="Name">
+  </div>
+  <datalist id="Patient">
+    <option value="Sanduni Shashikala"><option value="Kavindu Dilshan"><option value="Kavindu Hasantha"><option value="Amila Wasantha"><option value="Senavirathna Bandara"><option value="Wasantha Kumara"><option value="Binura Salindra"><option value="Dilum Chanuka">            </datalist>
+  </div>
+  <div class="form-group">
+    <label for="usr"><i class="fas fa-home"></i>Address </label>
+    <input type="text" class="form-control" id="address" name="address">
+  </div>
+  <div class="form-group">
+    <label for="usr"><i class="fas fa-at"></i>Email </label>
+    <input type="text" class="form-control" id="usr" name="mail">
+  </div>
+  <div class="form-group">
+    <label for="usr"><i class="fas fa-mobile"></i> Moblie Number</label>
+    <input type="text" class="form-control" id="usr" name="mobile">
+  </div>
+</form>
+</div>
+
+</body>
+</html>

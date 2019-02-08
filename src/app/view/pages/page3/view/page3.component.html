@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- <div class="row" style="left: 30%;position: relative">
+    <button class="button" style="vertical-align:middle"><span>Create Account </span></button>
+
+    <button class="button" style="vertical-align:middle"><span>Manage Account </span></button>
+
+    <button class="button" style="vertical-align:middle"><span>Doctor Schedule </span></button>
+
+    <button class="button" style="vertical-align:middle"><span>Make Appoinment </span></button>
+  </div> -->
+
+<div class="container" style="width: 80%">
+  <h2>Doctors Handling</h2>
+  <form name="reg-form" class="reg-form" [formGroup] = "scheduleForm">
+      <!-- <!-- <div> -->
+          <div class="form-group">
+            <label for="select Doctor Id">  Doctor Id :</label>
+            <input list="doctor" class="form-control" id="cmbdoctorId" name="cmbdoctorId" placeholder="Doctor Id">
+        </div>
+        <datalist id="doctor">
+          <option value="D001"></datalist> 
+    <div class="form-group">
+      <label for="usr">Doctor Name :</label>
+      <input type="text" class="form-control" id="address" name="name">
+    </div>
+    <div class="form-group">
+      <label for="usr">Mobile Number :</label>
+      <input type="text" class="form-control" id="usr" name="mobile">
+    </div>
+    <div class="form-group">
+      <label for="usr">Specaility :</label>
+      <input type="text" class="form-control" id="usr" name="specaility">
+    </div>
+    <div class="form-group">
+        <label for="usr">Hospital :</label>
+        <input type="text" class="form-control" id="usr" name="hospital">
+      </div>
+    <hr>
+    <h3>Enter Schedule Details</h3>
+
+    <div class="form-group">
+        <label for="usr">Schedule Id :</label>
+        <input type="text" class="form-control" id="schecule" name="scheduleId">
+      </div>
+      <div class="form-group">
+          <label for="select Doctor Id">Day Name :</label>
+          <input list="day" class="form-control" id="cmbday" name="cmbday" placeholder="selectDay">
+      </div>
+      <datalist id="day">
+          <option value="Monday"><option value="Tuesday"><option value="Wednesday"><option value="Thursday"><option value="Friday"><option value="Saturday"><option value="Sunday"></option></datalist> 
+      <div class="form-group">
+          <label for="usr">Time Slot :</label>
+          <input type="text" class="form-control" id="time" name="Time">
+        </div>
+        <div class="form-group">
+            <label for="usr">Max Patient Count :</label>
+            <input type="text" class="form-control" id="count" name="Count">
+          </div>
+    <button type="submit" class="btn btn-primary">Make Schedule</button>
+  </form>
+</div>
+<hr>
+</body>
+</html>
